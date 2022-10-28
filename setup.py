@@ -1,5 +1,5 @@
 #! /usr/bin/env python
-"""Toolbox for Machine Learning using Topological Data Analysis."""
+"""Toolbox for Time Series Analysis."""
 
 import os
 import codecs
@@ -21,9 +21,9 @@ with open("dev-requirements.txt") as f:
 
 DISTNAME = "giotto-time"
 DESCRIPTION = "Toolbox for Time Series analysis and integration with Machine Learning."
-with codecs.open("README.rst", encoding="utf-8-sig") as f:
+with codecs.open("README.md", encoding="utf-8-sig") as f:
     LONG_DESCRIPTION = f.read()
-LONG_DESCRIPTION_TYPE = "text/x-rst"
+LONG_DESCRIPTION_TYPE = "text/markdown"
 MAINTAINER = "Alessio Baccelli"
 MAINTAINER_EMAIL = "maintainers@giotto.ai"
 URL = "https://github.com/giotto-ai/giotto-time"
@@ -41,8 +41,9 @@ CLASSIFIERS = [
     "Operating System :: POSIX",
     "Operating System :: Unix",
     "Operating System :: MacOS",
-    "Programming Language :: Python :: 3.6",
     "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
 ]
 KEYWORDS = (
     "machine learning time series data analysis " + "topology, persistence diagrams"
